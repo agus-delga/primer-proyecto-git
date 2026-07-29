@@ -6,5 +6,6 @@ int main (){
     cout << "Hola, " << nombre << endl;
     cout << "Proyecto subido correctamente a GitHub" << endl;
     cout << "Estoy aprendiendo Git" << endl;
+    cout << "Gracias por usar el programa" << endl;
     return 0;
 }
