@@ -6,6 +6,8 @@ Este es mi primer proyecto utilizando Git y GitHub.
 
 El programa solicita el nombre del usuario y muestra un saludo personalizado.
 
+Este repositorio también lo estoy usando para aprender el flujo básico de Git.
+
 ## Tecnologías utilizadas
 
 - C++
