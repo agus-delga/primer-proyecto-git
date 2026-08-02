@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "estadisticas.h"
+
 using namespace std;
 
 int main() {
@@ -23,32 +25,11 @@ int main() {
         numeros.push_back(numero);
     }
 
-    int suma = 0;
-
-    for (int numero : numeros) {
-        suma += numero;
-    }
-
-    double promedio = static_cast<double>(suma) / numeros.size();
-
-    int minimo = numeros[0];
-    int maximo = numeros[0];
-
-    for (int numero : numeros) {
-        if (numero < minimo) {
-            minimo = numero;
-        }
-
-        if (numero > maximo) {
-            maximo = numero;
-        }
-    }
-
     cout << "\nResultados:" << endl;
-    cout << "Suma: " << suma << endl;
-    cout << "Promedio: " << promedio << endl;
-    cout << "Minimo: " << minimo << endl;
-    cout << "Maximo: " << maximo << endl;
+    cout << "Suma: " << calcularSuma(numeros) << endl;
+    cout << "Promedio: " << calcularPromedio(numeros) << endl;
+    cout << "Minimo: " << calcularMinimo(numeros) << endl;
+    cout << "Maximo: " << calcularMaximo(numeros) << endl;
 
     return 0;
 }
